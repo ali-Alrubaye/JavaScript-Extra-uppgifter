@@ -21,18 +21,10 @@ class Boos extends Employee {
 }
 class Company {
     constructor(name) {
-            this.name = name;
-            this.employees = ["Kalle", "Lisa", "Ali"];
+        this.name = name;
+        this.employees = ["Kalle", "Lisa", "Ali"];
 
-        }
-        // list_employees() {
-        //     this.employees.forEach(e => {
-        //         e instanceof Boos ? console.log(`${e.name} - ${e.level}`) :
-        //             e instanceof Employee ? console.log(`${e.name} - Employee`) :
-        //             console.log(e)
-        //     })
-        // }
-
+    }
     list_employees(employees = this.employees) {
         employees.forEach(e => {
             e instanceof Boos ? console.log(`${e.name} - ${e.level}`) :

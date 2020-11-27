@@ -2,7 +2,7 @@ let palindString = 'Ni talar bra latin';
 let normalString = 'Lorem ipsum';
 
 function checkString(st) {
-    let reverseSt = st.toLowerCase().replace(/ /g, '');
+    let reverseSt = st.toLowerCase().replace(/ /g, '').split('').reverse();
     let str = st.toLowerCase().replace(/ /g, '');
     for (let i = 0; i < str.length; i++) {
         if (str[i] === reverseSt[i]) {

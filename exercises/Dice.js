@@ -30,6 +30,13 @@ class Dice {
         }
     }
 }
-let newDice = new Dice();
+// let newDice = new Dice();
+// newDice.throw();
+// console.log(newDice)
+
+/**
+ * Dice Part 2
+ */
+let newDice = new Dice(10);
 newDice.throw();
 console.log(newDice)

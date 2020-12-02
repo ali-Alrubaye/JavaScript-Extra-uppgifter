@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dice.css">
+    <title>Dice Web</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="dice_content">
+            <div class="dice_area single">
+                <div class="dice_single">
+                    <button class="btn" onclick="dice_one()" type="button">Slå tärning</button>
+                    <label>Tärning 1:</label>
+                    <span class="dice1" id="diceS_1"><img src="images/Alea_0.png" alt="zero"></span>
+                </div>
+                <div class="dice_single">
+                    <button class="btn" onclick="dice_two()" type="button">Slå tärning</button>
+                    <label>Tärning 2:</label>
+                    <span class="dice2" id="diceS_2"><img src="images/Alea_0.png" alt="zero"></span>
+                </div>
+            </div>
+            <div class="dice_area">
+                <button id="startbtu" class="btn" type="button">Slå tärning</button>
+                <div>
+                    <label>Tärning 1:</label>
+                    <span class="dice" id="dice_1"><img src="images/Alea_0.png" alt="zero"></span>
+                </div>
+                <div>
+                    <label>Tärning 2:</label>
+                    <span class="dice" id="dice_2"><img src="images/Alea_0.png" alt="zero"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="dice.js"></script>
+</body>
+
+</html>

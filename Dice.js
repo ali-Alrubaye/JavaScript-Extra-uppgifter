@@ -12,31 +12,28 @@ Skapa ett objekt av klassen, anropa throw() några gånger och skriv ut objektet
 class Die {
     constructor() {
         this.value = '';
-        this.throw();
+        this.throw_new_die();
     }
-    throw () {
+    throw_new_die() {
         this.value = Math.floor((Math.random() * 6) + 1);
     }
 }
 
 class Dice {
     constructor(no_of_dice = 5) {
-        this.no_of_dice = no_of_dice;
-        this.dices = []
+        this.dice_objects = [];
+
+        for (let i = 0; i < no_of_dice; i++) {
+            this.dice_objects.push(new Die());
+        }
     }
     throw () {
-        for (let i = 0; i < this.no_of_dice; i++) {
-            this.dices.push(new Die());
+        for (const current_dice of this.dice_objects) {
+            current_dice.throw_new_die();
         }
     }
 }
-// let newDice = new Dice();
-// newDice.throw();
-// console.log(newDice)
-
-/**
- * Dice Part 2
- */
-let newDice = new Dice(10);
+let newDice = new Dice();
+console.log(newDice)
 newDice.throw();
 console.log(newDice)

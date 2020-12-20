@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc_main">
+            <div class="calc_input">
+                <span id="input_field">0</span>
+            </div>
+            <div class="calc_content">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td data-symbol="ac" id="clear">AC</td>
+                            <td data-symbol="+/-" class="field-todo add_sub">+/-</td>
+                            <td data-symbol="%" class="field modular">%</td>
+                            <td data-symbol="&divide;" class="field divide">&divide;</td>
+                        </tr>
+                        <tr>
+                            <td data-symbol="7" class="field seven">7</td>
+                            <td data-symbol="8" class="field eight">8</td>
+                            <td data-symbol="9" class="field nine">9</td>
+                            <td data-symbol="&times;" class="field nine">&times;</td>
+                        </tr>
+                        <tr>
+                            <td data-symbol="4" class="field seven">4</td>
+                            <td data-symbol="5" class="field eight">5</td>
+                            <td data-symbol="6" class="field nine">6</td>
+                            <td data-symbol="-" class="field nine">-</td>
+                        </tr>
+                        <tr>
+                            <td data-symbol="1" class="field seven">1</td>
+                            <td data-symbol="2" class="field eight">2</td>
+                            <td data-symbol="3" class="field nine">3</td>
+                            <td data-symbol="+" class="field nine">+</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" data-symbol="0" class="field seven">0</td>
+                            <td data-symbol="." class="field eight">.</td>
+                            <td data-symbol="=" class="field nine">=</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
